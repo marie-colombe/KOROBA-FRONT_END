@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Mon propre CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Kôrôba - Profil Artisan</title>
+    
+</head>
+<body>
+    <section class="profil">
+        <h2 class="titre">Profil Artisan</h2>
+        <div class="photo-profil">
+            <img src="assets/images/a-min.jpg" alt="Photo de Profil">
+            <input type="file" id="photo-profil" name="photo-profil" accept=".jpg,.jpeg,.png">
+            <label for="photo-profil"><i class="fas fa-camera"></i></label>
+        </div>
+        <div class="details">
+            <p>Nom: <span>{{artisan.username}}</span></p>
+            <p>Prénom: <span>Racine</span></p>
+            <p>Numéro de téléphone: <span>0101010101</span></p>
+            <p>Numéro WhatsApp: <span>0101010101</span></p>
+            <p>Sexe: <span>Femme</span></p>
+            <p>Métier: <span>Couture</span></p>
+            <p>Années d'expérience: <span>5 ans</span></p>
+            <p>Type de pièce d'identité: <span>Carte nationale d'identité</span></p>
+        </div>
+        <div class="btn">
+            <button class="modifier">Modifier le Profil</button>
+        </div>
+    </section>
+</body>
+</html>

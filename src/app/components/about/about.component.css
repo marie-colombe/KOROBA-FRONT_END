@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f2f2f2;
+    color: #333;
+    padding-top: 80px; /* Espace pour le header fixe */
+}
+
+header {
+    background-color: #fff;
+    color: #fff;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 50px;
+}
+
+header .nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+header .nav-links a {
+    color: #FF914D;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+header .nav-links a:hover {
+    color: #1F60B7;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+    margin-right: 50px; /* Ajuster la marge à droite pour déplacer vers la gauche */
+    max-width: calc(100% - 280px); /* Limiter la largeur maximale des boutons */
+}
+
+header .auth-buttons a {
+    color: #1F60B7;
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 1px solid #1F60B7;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header .auth-buttons a:hover {
+    background-color: #1F60B7;
+    color: #fff;
+}
+
+/* Section About */
+.about-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: #fff;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.about-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #FF914D;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.about-section .image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.about-section .image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-section .stats {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.about-section .stat {
+    background: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 10px;
+    flex: 1;
+    max-width: 150px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-section .stat:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.about-section .stat h3 {
+    font-size: 2rem;
+    color: #F9B233;
+    margin-bottom: 0.5rem;
+}
+
+.about-section .stat p {
+    font-size: 1rem;
+    color: #777;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .about-section {
+        padding: 2rem;
+    }
+}
+
+
+
+footer {
+    background-color: #fff;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: relative;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #ff6403;
+    color: white;
+}
+
+footer .social-links a {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+footer .social-links a:hover {
+    color: #1F60B7;
+}
+
+footer p.copyright {
+    margin: 0;
+    font-size: 0.875rem;
+    margin-left: 100px; /* Ajouter de l'espacement entre le logo et le copyright */
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Kôrôba</title>
+</head>
+<body>
+
+<!-- section header -->
+<app-header-index></app-header-index>
+
+<section class="tout-savoir">
+    <h2 class="en-tete">Trouver un <span>artisan</span></h2>
+    <div class="filtre">
+        <div class="filtre-g">
+         <select class="select-g" name="filtre" id="">
+             <option value="">Choisir...</option>
+                            <option value="couture">Couture</option>
+                            <option value="artisanat d’art et de décoration">Artisanat d’art et de décoration</option>
+                            <option value="mecanique ">Mécanique </option>
+                            <option value="agroalimentaire, alimentation, restauration ">Agroalimentaire, alimentation, restauration </option>
+                            <option value="maçonnerie ">Maçonnerie </option>
+                            <option value="transport">Transport</option>
+                            <option value="menuiserie/charpenterie">Menuiserie/Charpenterie</option>
+                            <option value="coiffure">Coiffure</option>
+                            <option value="vente de marchandises">Vente de marchandises</option>
+                            <option value="electronique (réparateur TV, portable, etc) ">Electronique (réparateur TV, portable, etc) </option>
+                            <option value="tapisserie">Tapisserie</option>
+                            <option value="audiovisuel et communication ">Audiovisuel et communication </option>
+                            <option value="boucherie">Boucherie</option>
+                            <option value="bijouterie">Bijouterie</option>
+                            <option value="hygiène et soins corporels ">Hygiène et soins corporels </option>
+                            <option value="briqueterie">Briqueterie</option>
+                            <option value="spécialiste en froid">Spécialiste en froid</option>
+                            <option value="vitrerie">Vitrerie</option>
+            </select>
+        </div>
+        
+    </div>
+
+
+<div class="box-container">
+<section *ngFor="let item of artisan;">
+    <div class="actu">
+        <img src="assets/images/banniere.jpeg" alt="">
+        <div class="detail-sur">
+        <p>
+            {{item.username}}
+        </p>
+            <h2><a href="detail-sur-artisan.html">
+                {{item.work}}
+            </a></h2>
+            <h5>
+                {{item.pseudo}}
+            </h5>
+            <p>Experiences</p>
+            <div class="btn-group">
+                <a routerLink="/boutique_client" class="btn-tel"><i class="fas fa-store"></i> Voir Boutique</a>    
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+   
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+
+<footer>
+        <img src="assets/images/Logo.png" alt="Logo">
+        <p class="copyright">&copy; 2024 Kôrôba. Tous droits réservés.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+</footer>
+
+</body>
+</html>

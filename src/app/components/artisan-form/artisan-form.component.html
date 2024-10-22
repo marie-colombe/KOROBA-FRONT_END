@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Nos Services - Kôrôba</title>
+</head>
+<body>
+
+
+    <section class="inscription">
+        <h2 class="titre">Inscription</h2>
+        <form action="" method="post" class="box-form" enctype="multipart/form-data">
+            <div class="box">
+                <div class="user-detail">
+                    <div class="input-box">
+                        <p>Nom</p>
+                        <input [(ngModel)] = "artisan.username" type="text" name="nom" placeholder="Votre nom" required class="champ-input">
+                    </div>
+
+                    <div class="input-box">
+                        <p>Pseudo</p>
+                        <input [(ngModel)] = "artisan.pseudo" type="text" name="prenom" placeholder="Votre prénom" required class="champ-input">
+                    </div>
+
+                    <div class="input-box">
+                        <p>Numéro de téléphone</p>
+                        <input [(ngModel)] = "artisan.number" type="phone" name="telephone" placeholder="Votre numéro de téléphone" required class="champ-input">
+                    </div>
+
+                    <div class="input-box">
+                        <p>Numéro WhatsApp</p>
+                        <input [(ngModel)] = "artisan.whatsapp_number" type="tel" name="whatsapp" placeholder="Votre numéro WhatsApp" required class="champ-input">
+                    </div>
+                    <div class="input-box-2">
+                        <p>Téléverser une photo de description de votre Activité</p>
+                        <input [(ngModel)] = "artisan.picture" type="file" name="piece_file" required accept=".pdf,.jpg,.jpeg,.png" class="champ-input">
+                    </div>
+                    <div class="input-box">
+                        <p>Metier</p>
+                        <input [(ngModel)] = "artisan.work" type="text" name="whatsapp" placeholder="Votre numéro WhatsApp" required class="champ-input">
+                    </div>
+                    <div class="input-box">
+                        <p>Password</p>
+                        <input [(ngModel)] = "artisan.password" type="password" name="whatsapp" placeholder="Votre numéro WhatsApp" required class="champ-input">
+                    </div>
+
+                </div>
+
+                <div class="user-detail">
+                    <div class="input-box-2">
+                        <p>Sexe</p>
+                        <input [(ngModel)] = "artisan.sex" type="text" name="whatsapp" placeholder="Votre numéro WhatsApp" required class="champ-input">
+                        <!-- <select name="sexe" required class="champ-input">
+                            <option value="">Choisir...</option>
+                            <option value="homme">Homme</option>
+                            <option value="femme">Femme</option>
+                        </select> -->
+                    </div>
+                   <!--  <div class="input-box-2">
+                        <p>Métier</p>
+                        <select name="metier" required class="champ-input">
+                            <option value="">Choisir...</option>
+                            <option value="couture">Couture</option>
+                            <option value="artisanat d’art et de décoration">Artisanat d’art et de décoration</option>
+                            <option value="mecanique ">Mécanique </option>
+                            <option value="agroalimentaire, alimentation, restauration ">Agroalimentaire, alimentation, restauration </option>
+                            <option value="maçonnerie ">Maçonnerie </option>
+                            <option value="transport">Transport</option>
+                            <option value="menuiserie/charpenterie">Menuiserie/Charpenterie</option>
+                            <option value="coiffure">Coiffure</option>
+                            <option value="vente de marchandises">Vente de marchandises</option>
+                            <option value="electronique (réparateur TV, portable, etc) ">Electronique (réparateur TV, portable, etc) </option>
+                            <option value="tapisserie">Tapisserie</option>
+                            <option value="audiovisuel et communication ">Audiovisuel et communication </option>
+                            <option value="boucherie">Boucherie</option>
+                            <option value="bijouterie">Bijouterie</option>
+                            <option value="hygiène et soins corporels ">Hygiène et soins corporels </option>
+                            <option value="briqueterie">Briqueterie</option>
+                            <option value="spécialiste en froid">Spécialiste en froid</option>
+                            <option value="vitrerie">Vitrerie</option>
+                        </select>
+                    </div>
+                    <div class="input-box-2">
+                        <p>Années d'expérience</p>
+                        <input type="number" name="annees_exp" placeholder="Votre expérience" required class="champ-input">
+                    </div> -->
+                    <!-- <div class="input-box-2">
+                        <p>Type de pièce d'identité</p>
+                        <select name="piece_identite" required class="champ-input">
+                            <option value="">Choisir...</option>
+                            <option value="extrait_naissance">Extrait de naissance</option>
+                            <option value="cni">Carte nationale d'identité (CNI)</option>
+                            <option value="passeport">Passeport</option>
+                            <option value="attestation_identite">Attestation d'identité</option>
+                        </select>
+                    </div>
+                    <div class="input-box-2">
+                        <p>Téléverser la pièce d'identité</p>
+                        <input type="file" name="piece_file" required accept=".pdf,.jpg,.jpeg,.png" class="champ-input">
+                    </div> -->
+                </div>
+            </div>
+
+            <!-- Case à cocher pour les termes et conditions -->
+            <div class="terms-policy">
+                <input type="checkbox" name="terms" id="terms" required>
+                <p>En vous inscrivant, vous acceptez nos <a routerLink="/chart_artisan">conditions générales</a> et notre <a routerLink="/chart_artisan">politique de confidentialité</a>.</p>
+            </div>
+
+            <div class="btn">
+                <a (click)="create_artisan()" class="inscrire">S'inscrire</a>
+            </div>
+            <div class="question-si">
+                <p>Avez-vous un compte ? <a routerLink="/connexion_artisan">Se connecter</a></p>
+            </div>
+        </form>
+    </section>
+
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+   
+    <title>Accueil Artisans - Kôrôba</title>
+</head>
+<body>
+    <!-- Header -->
+    <app-header></app-header>
+
+    <!-- Main Content -->
+    <div class="home">
+        <div class="home-overlay"></div>
+        <div class="home-content">
+            <h2>Bienvenue sur Kôrôba</h2>
+            <p>Découvrez des ressources, des formations et des opportunités pour développer votre métier d'artisan.</p>
+            <a href="boutique-artisan.html" class="btn">Gérer ma boutique</a>
+        </div>
+    </div>
+
+    <!-- News Section -->
+    <!-- News Section -->
+<section class="services">
+    <h2 class="en-tete">Arti<span>News</span></h2>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="assets/images/lois.jpg" alt="Service 1">
+                <h3>L'Artisanat en Côte d'Ivoire : Un Héritage Culturel Riche</h3>
+                <p>L'artisanat en Côte d'Ivoire est profondément enraciné dans les traditions culturelles du pays. Des sculptures en bois aux tissus traditionnels, chaque pièce raconte une histoire unique et perpétue des savoir-faire ancestraux. Les artisans ivoiriens jouent un rôle clé dans la préservation et la transmission de ces compétences à travers les générations.</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/images/alphabetisation.jpg" alt="Service 2">
+                <h3>L'Impact Économique de l'Artisanat en Côte d'Ivoire</h3>
+                <p>L'artisanat constitue une source importante de revenus pour de nombreuses familles en Côte d'Ivoire. En offrant des emplois et en soutenant des micro-entreprises locales, l'artisanat contribue au développement économique régional. Les produits artisanaux, souvent exportés, ajoutent également une valeur significative à l'économie nationale.
+                </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/images/tutoriel.jpg" alt="Service 3">
+                <h3>Les Marchés de l'Artisanat : Découvrez les Joyaux Locaux</h3>
+                <p>Les marchés artisanaux en Côte d'Ivoire sont des lieux vibrants où l'on peut découvrir une variété de produits faits main. Ces marchés, tels que le marché de Treichville à Abidjan, sont réputés pour leurs pièces uniques, allant des bijoux en perles aux objets en cuir. Ils offrent aux visiteurs une chance de rencontrer les artisans et d'apprécier leurs créations en personne.</p>
+            </div>
+        </div>
+        <!-- Ajouter des boutons de navigation si nécessaire -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+
+
+    <!-- Actualités Section -->
+    <section class="services">
+    <h2 class="en-tete">Arti<span>Skills</span></h2>
+        <div class="services-container">
+            <div class="service">
+                <img src="assets/images/lois.jpg" alt="Service 1">
+                <h3>Formations Juridiques</h3>
+                <p>Accédez à des formations sur les lois et règlementations en vigueur pour les artisans.</p>
+            </div>
+            <div class="service">
+                <img src="assets/images/alphabetisation.jpg" alt="Service 2">
+                <h3>Alphabétisation</h3>
+                <p>Améliorez vos compétences en lecture et écriture pour mieux gérer votre entreprise.</p>
+            </div>
+            <div class="service">
+                <img src="assets/images/tutoriel.jpg" alt="Service 3">
+                <h3>Tutos Pratiques</h3>
+                <p>Découvrez des tutoriels pratiques pour perfectionner vos techniques artisanales.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Contactez-nous</h2>
+        <div class="contact-form">
+            <form action="submit_contact.html" method="post">
+                <div class="form-group">
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Envoyer">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <img src="assets/images/logo.png" alt="Logo" style="height: 50px;">
+        <p class="copyright">&copy; 2024 Kôrôba. Tous droits réservés.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+
+
+</body>
+</html>

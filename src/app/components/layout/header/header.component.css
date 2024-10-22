@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Pour empêcher le défilement horizontal */
+}
+
+/* Header styles */
+header {
+    background-color: #FFFF; /* Couleur principale de Kôrôba */
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: relative;
+}
+
+header {
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 50px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+header .nav-links {
+    display: flex;
+    gap: 20px;
+    margin-left: 9.5rem; /* Ajouter un espacement entre le logo et les liens de navigation */
+}
+
+header .nav-links a {
+    color: #1F60B7;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+header .nav-links a:hover {
+    color: #1F60B7;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+    margin-right: 50px; /* Ajuster la marge à droite pour déplacer vers la gauche */
+    max-width: calc(100% - 280px); /* Limiter la largeur maximale des boutons */
+}
+
+header .auth-buttons a {
+    color: #1F60B7;
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 1px solid #1F60B7;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header .auth-buttons a:hover {
+    background-color: #1F60B7;
+    color: #fff;
+}
+
+
+
+/* Main content styles */
+.home {
+    /* background: url('assets/images/accueil-artisan.jpg') no-repeat center center/cover; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.home-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay noir semi-transparent */
+}
+
+.home-content {
+    z-index: 1;
+    color: #fff;
+    padding: 2rem;
+}
+
+.home-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.home-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.home-content a {
+    background-color: #1F60B7;
+    color: #fff;
+    padding: 0.5rem 2rem;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.home-content a:hover {
+    background-color: #FF914D;
+}
+
+span {
+    color: #1F60B7;
+}
+
+/* Swiper styles */
+.swiper-container {
+width: 100%;
+height: auto;
+}
+
+.swiper-slide {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+.swiper-slide img{
+max-width: 50%;
+border-radius: 8px;
+margin-bottom: 1rem;
+}
+
+.swiper-slide h3{
+font-size: 1.5rem;
+margin-bottom: 1rem;
+color: #312783;
+}
+
+.swiper-slide p{
+font-size: 1rem;
+color: #777;
+line-height: 1.6;
+}
+
+.swiper-pagination-bullet {
+background: #1F60B7;
+}
+
+.swiper-button-next, .swiper-button-prev {
+color: #fff;
+}
+
+/* Services section */
+.services {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #050505;
+}
+
+.services .services-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.services .service {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    max-width: 300px;
+    text-align: left;
+}
+
+.services .service:hover {
+    transform: translateY(-5px);
+}
+
+.services .service img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.services .service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #312783;
+}
+
+.services .service p {
+    font-size: 1rem;
+    color: #777;
+    line-height: 1.6;
+}
+
+
+/* Contact form */
+.contact {
+    padding: 4rem 2rem;
+    background-color: #f4f4f4;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #FF914D;
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.contact-form .form-group label {
+    font-size: 1.1rem;
+    color: #333;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form .form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contact-form .form-group input[type="submit"] {
+    background-color: #FF914D;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.contact-form .form-group input[type="submit"]:hover {
+    background-color: #007530;
+}
+
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .services .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form {
+        padding: 1rem;
+    }
+}
