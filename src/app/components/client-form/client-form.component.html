@@ -13,22 +13,22 @@
     <form action="process_registration.html" method="POST">
         <div class="form-group">
             <label for="username">Nom</label>
-            <input type="text" id="username" name="username" placeholder="Votre Nom et Prénoms" required>
+            <input [(ngModel)]="clients.username" type="text" id="username" name="username" placeholder="Votre Nom et Prénoms" required>
         </div>
 
         <div class="form-group">
-            <label for="username">Prénoms</label>
-            <input type="text" id="username" name="username" placeholder="Votre Nom et Prénoms" required>
+            <label for="username">Password</label>
+            <input [(ngModel)]="clients.password" type="text" id="username" name="username" placeholder="Votre Nom et Prénoms" required>
         </div>|
 
         <div class="form-group">
             <label for="email">Numéro de Téléphone</label>
-            <input type="email" id="email" name="email" placeholder="Votre Numéro de Téléphone" required>
+            <input [(ngModel)]="clients.number" type="email" id="email" name="email" placeholder="Votre Numéro de Téléphone" required>
         </div>
-        <div class="form-group">
+        <!-- <div class="form-group">
             <label for="password">Mot de passe</label>
             <input type="password" id="password" name="password" placeholder="Votre Mot de Passe" required>
-        </div>
+        </div> -->
 
         <!-- Case à cocher pour les termes et conditions -->
         <div class="terms-policy">
@@ -37,7 +37,7 @@
         </div>
 
         <div class="form-group">
-            <input type="submit" value="S'inscrire">
+            <input (click)="create_client()" type="submit" value="S'inscrire">
         </div>
         <div class="form-group login-link">
             <p>Vous avez déjà un compte ? <a routerLink="/connexion_client">Connectez-vous ici</a>.</p>

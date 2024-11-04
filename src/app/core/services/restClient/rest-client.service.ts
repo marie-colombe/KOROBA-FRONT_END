@@ -22,7 +22,7 @@ export class RestClientService {
     return this.http.get(this.baseUrl + '/' + endPoint, data)
   }
 
-  executeUpdate(endPoint: any, data?: any): Observable<any> {
+  executeUpdate(endPoint: any, data: any): Observable<any> {
     return this.http.put(this.baseUrl + '/' + endPoint, data)
   }
 
